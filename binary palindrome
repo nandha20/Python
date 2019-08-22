@@ -1,0 +1,9 @@
+for i in range(10,1000):
+    i=str(i)
+    if(i==i[::-1]):
+        c=int(i)
+        bi=bin(c)
+        d=bi[2:]
+        e=str(d)
+        if(e==e[::-1]):
+            print(e)
