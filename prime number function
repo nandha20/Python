@@ -8,3 +8,9 @@ def prime(x):
             if(x%j==0):
                 return False
     return True
+l=[]
+a=int(input())
+for i in range(2,a):
+    if(prime(i)):
+        l.append(i)
+print(*l)
