@@ -1,0 +1,55 @@
+s=input()
+k=0
+for i in range(len(s)):
+    k=k+int(s[i])*(i+1)
+def prime(x):
+    if(x==1 or x==0):
+        return False
+    elif(x==2):
+        return True
+    else:
+        for j in range(2,x//2):
+            if(x%j==0):
+                return False
+    return True    
+if(prime(k)):
+    p=0
+    k=str(k)
+    for i in k:
+        p=p+int(i)
+    print(p)
+else:
+    print(k)
+    
+    
+    
+    
+    
+Sample Input 0
+
+12345
+Sample Output 0
+
+55
+Explanation 0
+
+(1+2+3+4+5)+(2+3+4+5)+(3+4+5)+(4+5)+5 55 (As 55 is not a prime number)
+
+Sample Input 1
+
+188
+Sample Output 1
+
+5
+Explanation 1
+
+(1+8+8)+(8+8)+(8) = 17+16+8 = 41 5 (As 41 is a prime number its should be converted to the single digit value)
+
+Contest ends in 9 hours
+Submissions: 23
+Max Score: 100
+Difficulty: Medium
+Rate This Challenge:
+
+    
+More
