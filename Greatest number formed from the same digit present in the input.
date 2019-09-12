@@ -1,0 +1,46 @@
+a=int(input())
+if(a<0):
+    a=a*-1
+b=''.join(sorted(str(a)))
+d=len(str(a))
+if(d==1):
+    print(-1)
+elif(d>5):
+    print(9)
+else:
+    c=b[::-1]
+    print(c)
+    
+   
+    
+    
+    
+Constraints
+
+Note: 1. Length of the input digit should be between 2 and 5 
+2. If the length of the digit is 1 then output should be -1 
+3. If the length of the digit is >5 then output should be 9 
+4. If the number is negative omit the negative sign and consider the value as positive.
+
+
+
+
+
+
+
+Sample Input 0
+
+-123
+Sample Output 0
+
+321
+Explanation 0
+
+Absalute value should be processed. Don't consider about the sign positive / negative
+
+Sample Input 1
+
+54829
+Sample Output 1
+
+98542
