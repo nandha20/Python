@@ -1,0 +1,15 @@
+n=int(input())
+for i in range(n):
+    for j in range(n):
+        if(j%2==0):
+            print((j*n)+i+1,end=" ")
+        else:
+            print((j+1)*n-i,end=" ")
+    print()
+
+
+1 10 11 20 21
+2 9 12 19 22
+3 8 13 18 23
+4 7 14 17 24
+5 6 15 16 25
