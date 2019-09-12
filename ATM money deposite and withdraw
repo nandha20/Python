@@ -1,0 +1,13 @@
+n=int(input())
+a=n//2000
+n=n%2000
+b=n//1000
+n=n%1000
+c=n//500
+n=n%500
+d=n//100
+n=n%100
+if(n!=0):
+    print(-1,-1,-1,-1)
+else:
+    print(a,b,c,d)
