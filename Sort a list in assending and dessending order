@@ -1,0 +1,21 @@
+a=list(map(int,input().split()))
+b=list(map(int,input().split()))
+c=a[0]
+d=a[1]
+l=b[:d]
+l.sort()
+print(*l,end=" ")
+l1=b[d:]
+l1.sort()
+l1=l1[::-1]
+print(*l1)
+
+
+
+I/P:
+
+10 7
+55 5467 9 1 8734  4674 5 4 56 34
+
+O/P:
+1 5 9 55 4674 5467 8734 56 34 4
