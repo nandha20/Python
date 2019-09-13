@@ -1,0 +1,66 @@
+d=input().split(":")
+h1=int(d[0])
+m1=int(d[1])
+s1=int(d[2])
+d1=input().split(":")
+h2=int(d1[0])
+m2=int(d1[1])
+s2=int(d1[2])
+h=h2-h1
+m=m2-m1
+s=s2-s1
+if(s<0):
+    m-=1
+    s+=60
+if(m<0):
+    h-=1
+    m+=60
+if(h<0):
+    h+=24
+if(len(str(h))==1):
+    h="0"+str(h)
+if(len(str(m))==1):
+    m="0"+str(m)
+if(len(str(s))==1):
+    s="0"+str(s)
+st=str(h)+":"+str(m)+":"+str(s)
+print(st)
+
+
+
+
+
+
+
+
+
+
+
+Write a program to find the difference between two times. Time will be calculated in hh:mm:ss for a single day. (Maximum for the next day) Two time will be passed as string value with the specified format "hh:mm:ss".
+
+Input Format
+
+string string
+
+Constraints
+
+There is no AM/PM representation. Time is represented only in 24 Hours format.
+
+Output Format
+
+string
+
+Sample Input 0
+
+11:20:30
+08:40:30
+Sample Output 0
+
+02:40:00
+Sample Input 1
+
+08:40:30
+11:20:30
+Sample Output 1
+
+21:20:00
