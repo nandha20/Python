@@ -1,0 +1,48 @@
+a=int(input())
+l=[]
+l1=[]
+l2=[]
+l4=[]
+l5=[]
+for i in range(0,a):
+    l.append(int(input()))
+for j in range(0,len(l)):
+    if l[j] in l: 
+        l1.append(l.count(l[j]))
+l2=list(set(l1))
+l3=l2[::-1]
+for k in l3:    
+    for m in range(0,len(l1)):
+        if(k==l1[m]):
+            l4.append(l[m])
+    l4.sort()        
+    l5+=l4
+    l4=[]
+print(l5)
+
+
+Sample Input 0
+
+19
+1
+2
+2
+3
+3
+3
+4
+4
+5
+5
+5
+5
+6
+6
+6
+7
+8
+9
+10
+Sample Output 0
+
+[5, 5, 5, 5, 3, 3, 3, 6, 6, 6, 2, 2, 4, 4, 1, 7, 8, 9, 10]
