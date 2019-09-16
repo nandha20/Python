@@ -1,0 +1,15 @@
+a=input()
+s=""
+for i in a:
+    if(i!='a' and i!='e' and i!='i' and i!='o' and i!='u' and i!='A' and i!='E' and i!='I' and i!='O' and i!='U'):
+        s+=i 
+print(s)
+
+
+I/P:
+
+anandhakumarRAnandapple
+
+O/P:
+
+nndhkmrRnndppl
