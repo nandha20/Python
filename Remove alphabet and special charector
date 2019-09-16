@@ -1,0 +1,21 @@
+s="12@#abc>!def4563,"
+q=[]
+w=[]
+e=[]
+l=[]
+l4=[]
+for i in s:
+  if(i.isdigit()):
+   q.append(i)
+  elif(i.isalpha()):
+    w.append(i)
+  else:
+    e.append(i)
+l.append(q)
+l.append(w)
+l.append(e)
+print(l)
+for t in l:
+  l4.append(len(t))
+print(l4)
+print(*l[l4.index(max(l4))])
