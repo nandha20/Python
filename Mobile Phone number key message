@@ -1,0 +1,36 @@
+a=input()
+b={'a':2,'b':2,'c':2,'d':3,'e':3,'f':3,'g':4,'h':4,'i':4,'j':5,'k':5,'l':5,'m':6,'n':6,'o':6,'p':7,'q':7,'r':7,'s':7,'t':8,'u':8,'v':8,'w':9,'x':9,'y':9,'z':9}
+l=[]
+for i in a:
+    if(i in b):
+        l.append(b.get(i))
+for j in l:
+    print(j,end="")
+    
+    
+Eg. to print "hello" the key pattern is 43556.
+
+Input Format
+
+string
+
+Constraints
+
+NIL
+
+Output Format
+
+key pattern
+
+Sample Input 0
+
+hello
+Sample Output 0
+
+43556
+Sample Input 1
+
+hi
+Sample Output 1
+
+44
