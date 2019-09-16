@@ -1,0 +1,28 @@
+a=list(map(int,input().split()))
+mi=min(a)
+ma=max(a)
+b=(ma+mi)/2
+l=[]
+for i in range(0,len(a)):
+    l.append(abs(b-a[i]))
+l1=l.index(min(l))
+print(a[l1])
+
+
+
+Constraints
+
+Find the middle value of the array.
+In the above integer array the minimum value = 5 and maximum value = 30 So (30+5)/2 = 17.5.
+Nearest to 17.5 values are 16 and 21. The difference between 16 and 17.5 = 1.5 and difference between 21 and 17.5 = 3.5 So the output should be 16 as it is the nearest value.
+Output Format
+
+int
+
+Sample Input 0
+
+8
+10 8 5 6 25 30 16 21
+Sample Output 0
+
+16
