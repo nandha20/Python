@@ -1,0 +1,16 @@
+a=list(input().split(" "))
+s=""
+for i in range(len(a)-1,-1,-1):
+    s+=" "
+    s+=a[i]
+print(s[::-1],end=" ")
+
+
+
+Sample Input 0
+
+Wipro TechNologies BangaLore
+
+Sample Output 0
+
+opriW seigoloNhceT eroLagnaB
