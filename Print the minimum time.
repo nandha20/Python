@@ -1,0 +1,33 @@
+a=int(input())
+for i in range(a):
+    b,c=map(int,input().split())
+    d=list(map(int,input().split()))
+    e=min(d)
+    s=c-e
+    if(s>0):
+        print(s)
+    else:
+        print(0)
+    a=a-1
+ 
+ 
+ Output Format
+
+Print the minimum time.
+
+Sample Input 0
+
+2
+3 4
+1 2 5
+3 2
+2 5 5
+Sample Output 0
+
+3
+0
+Explanation 0
+
+For 1st testcase, In 1 second,array A={2,3,6} In 2 second,array A={3,4,7} In 3 second,array A={4,5,8}
+
+So,it will take 3 second for all array element to become greater than or equal to K
