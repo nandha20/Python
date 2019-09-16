@@ -1,0 +1,40 @@
+a=input()
+l=list(a)
+l1=[]
+l2=[]
+for i in range(0,len(l)-1):
+    for j in range(i,len(l)):
+        if(l[j] not in l1):
+            l1.append(l[j])
+            l2.append(len(l1))
+        else:
+            l1=[]
+            l1.append(l[j])
+print(max(l2))
+
+
+
+
+Output Format
+
+len
+
+Sample Input 0
+
+ABDEFGABEF
+Sample Output 0
+
+6
+Explanation 0
+
+The longest substring in the given string 'ABDEFGABEF' with no repeating characters is 'BDEFGA'. The length of 'BDEFGA' is 6.
+Sample Input 1
+
+ydjofwoqwv
+Sample Output 1
+
+6
+Explanation 1
+
+The substring is ydjofw. Length is 6.
+
