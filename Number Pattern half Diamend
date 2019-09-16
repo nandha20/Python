@@ -1,0 +1,22 @@
+a=3
+n=4
+for i in range(a,a+n):
+  for j in range(0,n):
+    if(i-a>=j):
+      print(i,end="")
+  print()  
+for k in range(a+n-1,a-1,-1):
+ for l in range(0,n):
+   if(k>=l+a):
+     print(k,end="")
+ print()    
+
+
+3
+44
+555
+6666
+6666
+555
+44
+3
