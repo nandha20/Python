@@ -1,0 +1,18 @@
+a,b=map(int,input().split())
+for i in range(a,b):
+    num=i
+    result=0
+    n=len(str(i))
+    while(num!=0):
+        digit=num%10
+        result=result+digit**n
+        num=num//10
+    if(i==result):
+        print(i,end=" ")        
+
+
+I/P:
+  100 500
+  
+ O/P:
+  153 370 371 407 
