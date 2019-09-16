@@ -1,0 +1,31 @@
+a=int(input())
+l=list(map(int,input().split()))
+b=max(l)
+c=0
+result=0
+l1=[]
+for i in range(2,b+1):
+    c=0
+    for j in l:
+        if(j%i==0):
+            c+=1
+    if(c==a or c==a-1):
+        result=max(result,i)
+print(result)      
+
+
+
+Output Format
+
+max - Maximum possible GCD of the array after an element is removed.
+
+Sample Input 0
+
+6
+16 12 4 12 10 12
+Sample Output 0
+
+4
+Explanation 0
+
+If we remove 10, then the gcd will be 4, which is the greatest possible gcd for the given array.
