@@ -1,0 +1,21 @@
+s=input()
+s=s.lower()
+s1=set()
+for  i  in s:
+    if i!=" ":
+        s1.add(i)
+if(len(s1)==26):
+    print("True")
+else:
+    print("False")
+    
+    
+Sample Input 0
+
+The quick brown fox jumps over the lazy dog
+Sample Output 0
+
+True
+Explanation 0
+
+The given sentence coontains all the letters in the english alphabets.
