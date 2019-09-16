@@ -1,0 +1,32 @@
+a=input().split()
+c=int(a[0],2)
+d=int(a[1],2)
+print(c*d)
+
+
+
+Input Format
+
+str1, str2 - 2 strings
+
+Constraints
+
+NIL
+
+Output Format
+
+product
+
+Sample Input 0
+
+1100 01
+Sample Output 0
+
+12
+Explanation 0
+
+1100 --> 12
+
+01 --> 1
+
+12x1 = 12.
