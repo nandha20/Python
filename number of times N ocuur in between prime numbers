@@ -1,0 +1,51 @@
+s=input()
+a=int(input())
+b=int(input())
+l=''
+for j in range(a,b+1):
+    t=1
+    for i in range(2,j):
+        if(j%i==0):
+            t=0
+            break
+    if(t):
+        l+=str(j)
+print(l.count(s))
+
+
+
+Sample Input 0
+
+3
+11
+37
+Sample Output 0
+
+4
+Explanation 0
+
+The prime numbers in the range from 11 to 37 are 11,13,17,19,23,29,31,37 The digit 3 occurs a total of 4 times. i.e. in 13,23,31,37 So the program should print 4 as output.
+
+Sample Input 1
+
+1
+11
+37
+Sample Output 1
+
+6
+Explanation 1
+
+The prime numbers in the range from 11 to 37 are 11,13,17,19,23,29,31,37 The digit 1 occurs a total of 6 times. i.e. in 11,13,17,19 and 31 So the program should print 6 as output.
+
+Sample Input 2
+
+6
+11
+37
+Sample Output 2
+
+0
+Explanation 2
+
+The prime numbers in the range from 11 to 37 are 11,13,17,19,23,29,31,37 The digit 6 occurs a total of 0 times. So the program should print 0 as output.
