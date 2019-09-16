@@ -1,0 +1,19 @@
+a=int(input())
+if(a%2==0):
+    b=a//2
+    print(b-1)
+else:
+    print(a-1)
+    
+    
+10 term - nth term in the series
+
+Sample Input 0
+
+10
+Sample Output 0
+
+4
+Explanation 0
+
+The 10th term in the series is 4.
