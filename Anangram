@@ -1,0 +1,22 @@
+a=int(input())
+for i in range(0,a):
+    b=input()
+    c=input()
+    d=b+c
+    e=len(d)
+    s=set(d)
+    l=len(s)
+    print(e-l)
+    
+    
+Sample Input 0
+
+1
+dct
+tfd
+Sample Output 0
+
+2
+Explanation 0
+
+To make it anagrams to each other: Delete c from dct. Delete f from tfd. print the count of deletion character.
