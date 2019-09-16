@@ -1,0 +1,42 @@
+n=int(input())
+s=0
+for i in str(n):
+    m=1
+    for j in range(1,int(i)+1):
+        m*=j
+    s+=m
+if(int(n)==int(s)):
+    print("YES")
+else:
+    print("NO")
+    
+    
+    
+    
+Example: 145 is a strong number.
+
+1!+4!+5! = 1+24+120 = 145.
+
+Input Format
+
+number n
+
+Constraints
+
+NIL
+
+Output Format
+
+YES or NO
+
+Sample Input 0
+
+123
+Sample Output 0
+
+NO
+Explanation 0
+
+123 is not a strong number.
+
+1!+2!+3! = 9.
