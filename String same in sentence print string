@@ -1,0 +1,27 @@
+a=int(input())
+l=input().split(" ")
+str=''
+max=99999;
+k=0
+for i in l:
+    if(len(i)<max):
+        max=len(i)
+        str=i
+l.remove(str)
+for i in l:
+    if(str in i):
+        k=1
+    else:
+        k=0   
+if(k):
+    print(str)
+else:
+    print(-1)
+    
+    
+    
+ I/P:
+3
+anand anand anan
+O/P:
+anan
