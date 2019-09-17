@@ -1,0 +1,71 @@
+n=int(input())
+a=list(map(int,input().split()))
+b,c=[],[]
+x,y=map(int,input().split())
+if(a.count(x)>0 and a.count(y)>0):
+    mini=10000
+    for i in range(n):
+        if(a[i]==x):
+            b.append(i)
+        if(a[i]==y):
+            c.append(i)
+
+    for j in range(len(b)):
+        for k in range(len(c)):
+            mini=min(mini,abs(b[j]-c[k]))
+    print(mini)
+else:
+    print(-1)
+    
+    
+    
+Given an unsorted array arr[] and two numbers x and y, find the minimum distance between x and y in arr[]. The array might also contain duplicates. You may assume that both x and y are different and present in arr[].
+
+Input Format
+
+size of array: n
+
+array: arr[n]
+
+values x and y
+
+Constraints
+
+1 <= N <= 10000
+
+1 <= A, x, y <= 10000
+
+Output Format
+
+Minimum Distance 'd'.
+
+Sample Input 0
+
+7
+86 39 90 67 84 66 62 
+42 12
+Sample Output 0
+
+-1
+Explanation 0
+
+x = 42 and y = 12. We return -1 as the x and y don't exist in the array.
+Sample Input 1
+
+2
+1 2
+1 2
+Sample Output 1
+
+1
+Explanation 1
+
+x = 1 and y = 2. minDistance between x and y is 1.
+Sample Input 2
+
+7
+45 45 12 35 12 45 36
+45 35
+Sample Output 2
+
+2
