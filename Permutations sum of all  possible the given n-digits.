@@ -1,0 +1,43 @@
+from itertools import permutations
+n=int(input())
+str=str(n)
+l=[]
+c=0
+for i in str:
+    l.append(i)
+for j in permutations(l,len(l)):
+    c+=int("".join(j))
+print(c)
+
+
+Input Format
+
+number - number consisting of n digits
+
+Constraints
+
+1<=N<=100
+
+Output Format
+
+SUM
+
+Sample Input 0
+
+123
+Sample Output 0
+
+1332
+Explanation 0
+
+All possible permutations of the number 123 are 123, 132 , 312 , 213, 231 , 321. Sum of all permuatations is 1332. 
+Sample Input 1
+
+12
+Sample Output 1
+
+33
+Explanation 1
+
+12 + 21 = 33.
+
