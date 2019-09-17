@@ -1,0 +1,22 @@
+Sam is playing a game. In a single move, Sam can score 3 or 5 or 10 points. Sam has to reach a given score to finish the game. Find the number of ways in which Sam can reach the given score and finish the game.
+
+Sample Input 0
+
+8
+Sample Output 0
+
+1
+Explanation 0
+
+Sam can reach a score of 8 by either scoring {5,3} or {3,5}. Here both are different permutations. But their combination is the same. Hence,the output is 1.
+Sample Input 1
+
+20
+Sample Output 1
+
+4
+Explanation 1
+
+The possible ways to reach a score of 20 are,
+
+{3,3,3,3,3,5}, {5,5,5,5}, {5,5,10}, {10,10}. Hence, Output is 4.
