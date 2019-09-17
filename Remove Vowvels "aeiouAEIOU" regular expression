@@ -1,0 +1,9 @@
+import re
+n=input()
+a=re.sub('[aeiouAEIOU]','',n)
+print(a,end="")
+
+I/P:
+eatentreat
+O/P:
+tntrt
