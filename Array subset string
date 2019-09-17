@@ -1,0 +1,79 @@
+m,n=map(int,input().split(" "))
+a,b=list(map(str,input().split(" "))),list(map(str,input().split(" ")))
+res=""
+for i in range(m):
+    tem=0
+    for j in range(n):
+        s1=b[j]
+        te=0
+        for k in s1:
+            if(a[i].count(k)==0):
+                break
+            else:
+                te+=1
+        if(te==len(s1)):
+            tem+=1
+    if(tem==n):
+       res+=a[i]+" "
+if(len(res)==0):
+    print(-1)
+else:
+    print(res)
+    
+    
+    
+    
+    
+Given 2 arrays A and B of m and n words. Each word is a string of lowercase letters. Now, say that all words in array B is a subset of which words in array A.
+
+For Example,
+
+Both "pe" and "il" are subsets of "pencil" whereas "wrr" is a subset of "warrior" but not a subset of "world".
+
+Print every word in array A,for which every word in array b is a subset. If there is no such word in array A, print -1.
+
+Input Format
+
+m,n - size of array A and B
+
+m words of array A
+
+n word of array B
+
+Constraints
+
+1<=m,n<=10
+
+Output Format
+
+Array of words
+
+Sample Input 0
+
+5 2
+amazon apple facebook google leetcode
+e o
+Sample Output 0
+
+facebook google leetcode
+Explanation 0
+
+Consider every word in array A:
+amazon - has 'o' but not 'e'
+apple - has 'e' but not 'o'
+facebook - has both 'e' and 'o'
+google - has both 'e' and 'o'
+leetcode - has both 'e' and 'o'
+
+hence output is 'facebook,google,leetcode'
+Sample Input 1
+
+5 3
+amazon apple facebook google leetcode
+ec oc ceo
+Sample Output 1
+
+facebook leetcode
+Explanation 1
+
+Only 'facebook' and 'leetcode' have all the 3 characters in array B
