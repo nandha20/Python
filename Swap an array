@@ -1,0 +1,13 @@
+n=int(input())
+a=list(map(int,input().split()))
+for i in range(n-2):
+    temp=a[i]
+    a[i]=a[i+2]
+    a[i+2]=temp
+print(*a)
+
+I/P:
+5
+1 2 3 4 5
+O/P:
+3 4 5 2 1
