@@ -1,0 +1,27 @@
+n=int(input())
+l=list(map(int,input().split()))
+r=[]
+k=0
+for i in range(n):
+    if l[i]>=0:
+        r.append(l[i])
+    r.sort()
+for i in range(n):
+    if l[i]>=0:
+        l[i]=r[k]
+        k+=1
+for i in range(n):
+    print(l[i],end=" ")
+    
+    
+Output Format
+
+array - The sorted array
+
+Sample Input 0
+
+6
+-34 15 -39 9 21 -48 
+Sample Output 0
+
+-34 9 -39 15 21 -48 
