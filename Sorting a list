@@ -1,0 +1,18 @@
+l=[10,12,7,14,2,1,4]
+pos=0
+for i in range(0,len(l)):
+    min=99999;
+    for j in range(i,len(l)):
+        if min > l[j]:
+            min=l[j]
+            pos=j
+    t=l[i]
+    l[i]=l[pos]
+    l[pos]=t
+print(l)
+
+
+
+O/P:
+[1, 2, 4, 7, 10, 12, 14]
+
