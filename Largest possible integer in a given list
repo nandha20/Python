@@ -1,0 +1,32 @@
+from itertools import permutations
+a=int(input())
+l=list(map(int,input().split()))
+l1=[]
+for i in permutations(l,len(l)):
+    l1.append("".join(map(str,i)))
+print(max(l1))
+
+
+
+
+Output Format
+
+num - Largest number that can be formed using the given list of elements.
+
+Sample Input 0
+
+5
+3 30 34 5 9
+Sample Output 0
+
+9534330
+Explanation 0
+
+9534330 is the largest number that can be formed using the given list of numbers.
+Sample Input 1
+
+6
+47 32 0 20 7 14 
+Sample Output 1
+
+7473220140
