@@ -1,0 +1,52 @@
+import sys
+def minCoins(coins, m, V): 
+
+    if (V == 0): 
+        return 0
+
+    res = sys.maxsize 
+
+    for i in range(0, m): 
+        if (coins[i] <= V): 
+            sub_res = minCoins(coins, m, V-coins[i]) 
+  
+
+            if (sub_res != sys.maxsize and sub_res + 1 < res): 
+                res = sub_res + 1
+  
+    return res
+
+def findMin(V): 
+
+    deno = [1, 2, 5] 
+    n = len(deno)
+    
+
+    ans = [] 
+
+    i = n - 1
+    while(i >= 0): 
+        
+        while (V >= deno[i]): 
+            V -= deno[i] 
+            ans.append(deno[i]) 
+  
+        i -= 1
+    print(ans.count(5),ans.count(2),ans.count(1))
+
+
+    
+if __name__ == '__main__':
+    n = 13
+    coins = [1, 2, 5]
+    m = len(coins)
+    V = 13
+    print(minCoins(coins, m, V), "", end = "") 
+    findMin(n)
+    
+    
+    
+    
+    
+    O/P:
+    4 2 1 1
