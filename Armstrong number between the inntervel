@@ -1,0 +1,52 @@
+*Armstrong number*
+
+Num length is each number power add
+Eg.153.  Length=3 digits
+1power 3=1
+5 power 3=125
+3power 3=27
+
+Add this three =1+125+27=153
+Given num 153 is same as result num 153
+Is Armstrong
+
+Check whether each number dividable by%10
+** Means square value
+
+
+for i in range(int(input()),int(input())):
+    re=0
+    i=str(i)
+    n=len(str(i))
+    for j in i:
+        j=int(j)
+        re=re+(j**n)   
+    if(re==int(i)):
+        print(re) 
+        
+        
+        
+ Write a program to display Armstrong numbers between two intervals
+
+Input Format
+
+The first line consists of an integer first interval. The second line consists of an integer second interval.
+
+Constraints
+
+-
+
+Output Format
+
+The output is the Armstrong numbers between two intervals with each number on a new line.
+
+Sample Input 0
+
+100
+1000
+Sample Output 0
+
+153
+370
+371
+407
