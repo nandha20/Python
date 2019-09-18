@@ -1,0 +1,11 @@
+a,b=map(int,input().split())
+l=list(map(int,input().split()))
+c=l[b:]+l[:b]
+for i in c:
+    print(i,end=" ")
+    
+ I/P:
+ 5 2
+1 2 3 4 5
+O/P:
+3 4 5 1 2 
