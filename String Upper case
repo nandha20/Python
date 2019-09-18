@@ -1,0 +1,29 @@
+n=input()
+print(n.upper())
+
+
+Convert a lowercase string to uppercase String.
+
+Input Format
+
+String
+
+Constraints
+
+4 < stringlength < 15
+
+Output Format
+
+uppercase string
+
+Sample Input
+
+welcome
+
+Sample Output
+
+WELCOME
+
+Explanation
+
+Convert a lowercase string to uppercase String
