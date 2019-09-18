@@ -1,0 +1,36 @@
+def integer_to_english(number):
+    a=["","one","two","three","four","five","six","seven","eight","nine","ten"]
+    b=["","eleven","twelve","thirteen","fourteen","fifteen","sixteen","seventeen","eighteen","nineteen"]  
+    c=["","","twenty","thirty","fourty","fifty","sixty","seventy","eighty","nighty"]
+    d="hundred"
+    e="one thousand"
+    s=""
+    st=str(number)
+    if(len(st)==1):
+        str3=str(number)
+        return s
+    elif(number==10):
+        return a[10]  
+    elif(number<=19 and number>10):
+        str3=str(number)
+        return s
+    elif(len(st)==2 and number>10):
+        str3=str(number)
+        y=int(str[0])
+        x=int(str[1])
+        s=s+c[y]+" "+d+" and "+c[y]+" "+a[x]
+        return s
+        return s
+    elif(len(st)==3):
+        str3=str(number)
+        z=int(str[0])
+        y=int(str[1])
+        x=int(str[3])
+        s=s+a[z]+" "+d+" and "+c[y]+" "+a[x]
+        return s
+    elif(number==1000):
+        return e
+    else:
+        return "-1"
+number=int(input())
+print(integer_to_english(number))
