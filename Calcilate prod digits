@@ -1,0 +1,36 @@
+def Prod(n):
+  product=1
+  while (n!=0):
+    product=product*(n%10)
+    n=n//10
+  return product
+
+n=int(input())
+print(Prod(n))
+
+
+calculate the product of digits
+
+Input Format
+
+N integer
+
+Constraints
+
+0 < N < 10^10
+
+Output Format
+
+Product of a digit
+
+Sample Input
+
+23
+
+Sample Output
+
+6
+
+Explanation
+
+Product of digit
