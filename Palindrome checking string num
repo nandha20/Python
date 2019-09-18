@@ -1,0 +1,43 @@
+*Palindrome*   reverse is same eg.121, malayalam,madam
+
+Slice method(start:end:step)
+Reverse method (::-1)
+2 step increase to check*(1:8:2)
+
+Def check(str):
+     rev=str[::-1]
+     print(str)
+     print(rev)
+    If(str=rev):
+       return true 
+    else:
+       return false
+
+N=int(input())
+If check(N):
+    print("palindrome")
+Else:
+    Print ("not palindrome") 
+
+
+
+
+String reverse:
+
+str=input()
+rev=str[::-1]
+If(str==rev):
+   print("palindrome")
+Else:
+   Print("not palindrome"()
+
+
+
+Num check
+
+N=int(input())
+rev=str[::-1]
+If(str==rev):
+   print("palindrome")
+Else:
+   Print("not palindrome"()
