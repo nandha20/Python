@@ -1,0 +1,19 @@
+a=input()
+b=list(a)
+b.sort()
+b.append(0)
+for i in range(0,len(b)):
+    if(i==len(b)-1):
+        break
+   
+    elif(b[i]!=b[i+1]):
+       
+        print(b[i],b.count(b[i]))
+
+
+I/P:
+anand
+O/P:
+a 2
+d 1
+n 2
