@@ -1,0 +1,14 @@
+str="malayalam"
+n=len(str)
+c=0
+for i in range(n//2):
+    if(str[i]!=str[n-i-1]):
+        c=1
+        print("not palindrome")
+        break
+if c==0:
+    print("Palindrome")
+    
+    
+    O/P:
+    Palindrome
