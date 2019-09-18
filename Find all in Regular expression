@@ -1,0 +1,11 @@
+import re as t
+a=input()
+c=t.findall('[a-z A-z]',a)
+for i in c:
+    print(i,end='')
+    
+    
+    I/P:
+    ana%^$*!()@nd
+   O/P:
+   ana^nd
