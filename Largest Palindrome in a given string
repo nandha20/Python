@@ -1,0 +1,25 @@
+s=input()
+n=len(s)
+s1=e=0
+for i in range(n):
+    for j in range(n-1,i,-1):
+        i1=i
+        i2=j
+        while i1<i2:
+            if s[i1]!=s[i2]:
+                break
+            i1+=1
+            i2-=1
+        if i1>=i2:
+            if j-i >e-s1:
+                s1=i
+                e=j
+print("the longest palindrome is",s[s1:e+1])
+
+
+
+
+I/P:
+anandhakmar
+O/P:
+the longest palindrome is ana
