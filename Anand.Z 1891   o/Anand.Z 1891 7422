@@ -1,0 +1,97 @@
+import math
+a=input()
+n=int(input())
+cu_up=0
+lr_up=0
+s=""
+for t in range(0,len(a),1):
+    if a[t].isupper():
+        cu_up+=1
+        if cu_up<=2:
+            s=s+a[t]
+    elif a[t].islower():
+        lr_up+=1
+if cu_up==1:
+    k1=int(math.fabs(ord(s[0])-64))
+    while k1>9:
+        temp=int(k1%10)
+        temp2=int(k1/10)
+        k1=temp2+temp
+elif cu_up>1:
+    k1=int(math.fabs(ord(s[0])-ord(s[1])))
+    while k1>9:
+        temp=int(k1%10)
+        temp2=int(k1/10)
+        k1=temp2+temp
+else:
+    k1=0        
+k2=lr_up
+while k2>9:
+    temp=int(k2%10)
+    temp2=int(k2/10)
+    k2=temp2+temp
+k3=cu_up
+while k3>9:
+    temp=int(k3%10)
+    temp2=int(k3/10)
+    k3=temp2+temp
+c=str(n)
+count=0
+for t1 in range(0,len(c),1):
+    count+=int(c[t1])
+k4=count
+while k4>9:
+    temp=int(k4%10)
+    temp2=int(k4/10)
+    k4=temp2+temp  
+if k4%2!=0:
+    k4+=1        
+ans=str(k1)+str(k2)+str(k3)+str(k4)     
+print(ans)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Tag groups of hotels need a program to gennerate four digit wifi password for thier customers who book rooms in their hotel. Write a program for thier requirements.
+
+Requirements: 1. First digit should be the absolute value of the difference between first two upper case characters. The difference value should be converted to single digit value. Eg: Name = "Anand.Z" (Assume A=1,B=2,C=3,....Z=26) A=1,Z=26 so 1-26 = -25 = 25 (As 25 is two digit number it should be converted to single digit number) So 2+5 = 7 Note: If there is only one upper case character in the user name then assume second upper case value = 0 (zero) and continue the process. Eg: Name = "Anand" (First digit will be 1 as A=1)
+
+Second digit should be the length of the lower case letters in the user name Eg: Name = "Anand" Second Digit should be 4 (Lower case letter are "nand" and its length = 4) Note: If the length exceed 9 then it should be converted to a single digit value.
+
+Third digit should be the length of the upper case letters in the user name Eg: Name = "Anand" Third Digit should be 1 (Upper case letter are "A" and its length = 1) Note: If the length exceed 9 then it should be converted to a single digit value.
+
+Sum of the digits in the room number. If the sum exceed 9 then it should be converted to single digit value.
+
+Input Format
+
+String Integer
+
+Constraints
+
+If the single digit value is odd number make it even by increment it by 1. Eg: 1891 -> (1+8+9+1) -> 19 -> (1+9) -> 10 -> (1+0) = 1 (Since 1 is odd number increment its value by 1 so 2)
+
+Output Format
+
+Integer
+
+Sample Input 0
+
+Anand.Z
+1891
+Sample Output 0
+
+7422
