@@ -1,0 +1,25 @@
+*Armstrong number*
+
+Num length is each number power add
+Eg.153.  Length=3 digits
+1power 3=1
+5 power 3=125
+3power 3=27
+
+Add this three =1+125+27=153
+Given num 153 is same as result num 153
+Is Armstrong
+
+Check whether each number dividable by%10
+** Means square value
+
+
+For i in range(100):
+    num=i
+    result=0
+    n=len(str(i))
+   while(i!=0):
+       digital=i%10
+       result=result+digit***n
+    if(num==result):
+        print("num")
