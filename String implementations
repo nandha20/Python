@@ -1,0 +1,26 @@
+a='python'
+
+A='python"s program' 
+B="python's program"
+
+A=input('string')
+B=int(input('integer'))
+C=int(A)*B== string to int convert==160*0.45
+
+Print(a.[0]).         ==p
+Print(a.[-1]).      ===n
+Print(a.[:]).      ====python
+Print(a.[0:3]).    ====pyt
+Print(a.[1:5]).    ==ytho
+Print(a.[::-1]).   === Reverse=nohtyp
+
+Print('welcome '+a+' course').=welcome python course
+Print(len(a))     =length=6
+Print(a.find('th')).     = Index value=2
+Print(a.replace('y','s')).   =Replace =sython
+Print(a.upper()). =PYTHON
+Print(a.lower()).   =python
+Print(a.title()).   Python Program 3Gb
+Print(a.capitalize()).   Python Program 3gb
+Print('Python' in a).   = boolean==True
+
