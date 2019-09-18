@@ -1,0 +1,87 @@
+def prime(n):
+    if(n==1):
+        return False
+    for i in range(2,n):
+        if(n%i==0):
+            return False
+    return True        
+def mu(b,l):        
+    new=[]        
+    res1=b        
+    for i in l:
+        while(res1%i==0):
+            new.append(i)
+            res1=res1//i
+        if(res1==1):
+            return(len(new))        
+    res=1
+    for i in l:
+        res*=i
+    new=[]
+    if(prime(b)):
+        return(-1)
+    else:
+        res2=b
+        while(res2%i==0):
+            new.append(i)
+            res2=res2//i
+        if(res2==1):
+            return(len(new))
+        else:
+            return('-1')
+l=[]
+n=int(input())
+b=int(input())
+for i in range(2,n+1):
+    if prime(i):
+        l.append(i)
+print(mu(b,l))        
+
+
+
+
+
+
+
+
+
+Constraints
+
+If the prime number multiplication cannot form the given value it should return -1 as result.
+
+Output Format
+
+integer
+
+Sample Input 0
+
+10
+70
+Sample Output 0
+
+3
+Explanation 0
+
+As the prime number start value is 1 value and end value is 10 first list out the prime numbers between 1-10 which are {2,3,5,7}. Hence multiplication of these numbers should form 70 as result. Number can be repeated as many times as needed but the output should be only the minimum value. 2X5X7 = 70 Hence the output = 3 (Count of 2,5,7)
+
+Sample Input 1
+
+5
+53
+Sample Output 1
+
+-1
+Explanation 1
+
+Since 53 is the prime number it cannt be the multiplies oof any other number. Hence it should return -1.
+
+Sample Input 2
+
+3
+50
+Sample Output 2
+
+-1
+Explanation 2
+
+The product of two prime number {2,3} only cannot form 50. Hence it should return -1
