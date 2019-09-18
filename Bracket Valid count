@@ -1,0 +1,19 @@
+def bracket_pattern(input_str):
+    c1=input_str.count("(")
+    c2=input_str.count(")")
+    if(input_str.startswith(")") or input_str.endswith("(")):
+        return -1
+    elif (c1==c2):
+        return c1
+    else:
+        return -1
+input_str=input()
+print(bracket_pattern(input_str))
+
+
+
+I/P:
+(()()()())
+
+O/P:
+5
