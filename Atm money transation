@@ -1,0 +1,31 @@
+a=int(input())
+l=[]
+if(a%100!=0):
+    print("[-1,-1,-1,-1]")
+else:
+    c=a//2000
+    c1=a%2000
+    e=c1//1000
+    e1=c1%1000
+    f=e1//500
+    f1=e1%500
+    g=f1//100
+    g1=f1%100
+    l.append(c)
+    l.append(e)
+    l.append(f)
+    l.append(g)
+    print("[",end='')
+for i in range(len(l)):
+    print(l[i],end='')
+    if(i!=len(l)-1):
+        print(',',end='')
+    else:
+        print(']')
+
+
+
+I/P:
+8600
+O/P:
+[4,0,1,1]
