@@ -1,0 +1,8 @@
+import re
+str1="sleep"
+if(len(str1)>3):
+    if(re.search(r"ing$",str1)!=None):
+        str1+="ly"
+    else:
+        str1+="ing"
+print(str1)
