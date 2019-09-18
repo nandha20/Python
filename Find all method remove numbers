@@ -1,0 +1,32 @@
+import re
+str=input()
+str1=re.findall('[a-z A-z]',str)
+for i in str1:
+    print(i,end='')
+    
+    
+ Remove all Characters in a String except Alphabet.
+
+Input Format
+
+String
+
+Constraints
+
+2 < String Length < 15
+
+Output Format
+
+String
+
+Sample Input
+
+kitcse12
+
+Sample Output
+
+kitcse
+
+Explanation
+
+Remove all Characters in a String except Alphabet.
