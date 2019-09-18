@@ -1,0 +1,16 @@
+l=input()
+s1=(l.count('('))
+s2=(l.count(')'))
+if(l[0]=='(' and l[-1]==')'):
+       if s1==s2:
+              print(s1)
+       else:
+              print(-1)
+else:
+       print(-1)
+     
+     
+ I/P:
+ (()()()())
+ O/P:
+ 5
