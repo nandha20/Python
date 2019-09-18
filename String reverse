@@ -1,0 +1,44 @@
+a=input()
+b=list(a)
+c=b[::-1]
+for i in c:
+    print(i,end="")
+    
+    
+    I/P:
+    anand
+    
+    O/P:
+    dnana
+n=input()
+a=list(n)
+b=a[::-1]
+for i in b:
+    print(i,end="")
+    
+    
+Read a string from the user. Reverse the string. Display the reversed string.
+
+Input Format
+
+String
+
+Constraints
+
+5
+
+Output Format
+
+String
+
+Sample Input
+
+computer
+
+Sample Output
+
+retupmoc
+
+Explanation
+
+Dont use builtin function
