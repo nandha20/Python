@@ -2,17 +2,22 @@ a="anandhakumarr"
 b=4
 c=2
 l=[]
-l1=[]
+l1=""
 d=b*c-c
 e=b*pow(c,c)-pow(c,c)
 l.append(a[0]+a[d]+a[e])
 l.append(a[1]+a[d-1]+a[d+1]+a[e-1])
 l.append(a[2]+a[d-2]+a[d+2]+a[e-2])
-l1.append(a[3]+a[d+3])
+l1+=(a[3]+a[d-3]+a[d+3]+a[e-3])
+l2=[]
+for num in l1:
+    if num not in l2: 
+        l2.append(num) 
 for i in l:
     print(i,end="")
-for j in l1:
+for j in l2:
     print(j,end="")
+
 
 O/P:
 aarnhkraduanm
