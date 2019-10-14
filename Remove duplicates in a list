@@ -1,0 +1,17 @@
+l=int(input())
+a=list(map(int,input().split()))
+print(l)
+for i in range(0,l):
+    for j in range(i+1,l):
+        if(a[i]==a[j]):
+            a[j]=-1
+    if(a[i]!=-1):
+        print(a[i],end=" ")
+
+
+
+I/P:
+5
+12 45 45 87 95
+O/P:
+12 45 87 95
