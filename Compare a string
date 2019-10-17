@@ -1,0 +1,26 @@
+a='anand'
+b='kumar'
+l=len(a)
+l1=len(b)
+q=[]
+w=[]
+if(l==l1):
+    for i in range(0,l):
+        q.append(ord(a[i]))
+        w.append(ord(b[i]))
+q.sort()
+w.sort()
+k=0
+while(k<l):
+    if(q[k]==w[k]):
+        k+=1
+    elif(q[k]>w[k]):
+        print(b,end="")
+        break
+    else:
+        print(a)
+        break
+ O/P:
+ anand
+        
+
