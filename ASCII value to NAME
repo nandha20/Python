@@ -1,0 +1,18 @@
+a=[97,110,97,110,100]
+b=[107,117,109,97,114]
+l=len(a)
+l1=len(b)
+q=[]
+w=[]
+if(l==l1):
+    for j in range(0,l):
+        q.append(chr(a[j]))
+        w.append(chr(b[j]))
+for k in q:
+    print(k,end="")
+for s in w:
+    print(s,end="")        
+    
+O/P:
+anandkumar
+
