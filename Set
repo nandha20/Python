@@ -1,0 +1,10 @@
+a=int(input())
+s=[]
+for i in range(0,a):
+    s.append(input())
+l=[]
+for j in range(0,a):
+    l.append(ord(s[j]))
+l.sort()
+q=set(l)
+print(q)
