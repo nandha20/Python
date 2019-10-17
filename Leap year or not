@@ -1,0 +1,21 @@
+a=int(input())
+s=[]
+for i in range(0,a):
+    s.append(int(input()))
+c=0
+for j in range(0,a):
+    if((s[j]%400==0)or(s[j]%4==0 and s[j]%100!=0 or s[j]<1752)):
+       c+=1
+print(c)
+
+
+I/P:
+4
+2000
+2004
+2005
+1750
+
+
+O/P:
+3
