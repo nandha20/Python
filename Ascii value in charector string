@@ -1,0 +1,26 @@
+a='anand'
+b='kumar'
+l=len(a)
+l1=len(b)
+q=[]
+w=[]
+if(l==l1):
+    for i in range(0,l):
+        q.append(ord(a[i]))
+        w.append(ord(b[i]))
+print(*q)
+print(*w)
+p=[]
+r=[]
+for j in range(0,l):
+    p.append(chr(q[j]))
+    r.append(chr(w[j]))
+print(*p)
+print(*r)
+
+
+O/p:
+97 110 97 110 100
+107 117 109 97 114
+a n a n d
+k u m a r
