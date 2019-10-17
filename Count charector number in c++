@@ -1,0 +1,42 @@
+#include <iostream>
+#include <string.h>
+using namespace std;
+
+int main()
+{
+int ar[26]={0};
+char s[100];
+char c;
+int m=0;
+cin>>s;
+for(int i=0;i<strlen(s);i++)
+{
+ar[s[i]-'0'-49]++;
+if(m<ar[s[i]-'0'-49])
+{
+m=ar[s[i]-'0'-49];
+}
+}
+while(m)
+{
+for(int i=0;i<26;i++)
+{
+if(ar[i]==m)
+{
+c=i+49+'0';
+cout<<c<<"="<<ar[i]<<endl;
+}
+}
+m--;
+}
+return 0;
+}
+
+
+
+I/P:
+anand
+o/p:
+a-2
+n-2
+d-1
