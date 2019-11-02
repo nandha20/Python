@@ -1,0 +1,25 @@
+import itertools
+a=int(input())
+l=[]
+for i in range(0,a):
+    l.append(int(input()))
+b=int(input())
+l1=sum(l)
+c=itertools.combinations(l,2)
+k=[]
+for i in c:
+    k.append(sum(i))
+k.sort()
+print(k[len(k)//2])
+
+
+I/P:
+3
+1
+5
+2
+2
+
+
+O/P:
+6
